@@ -5,6 +5,15 @@ $weight = 55; // kilo (kg)
 $height = 170; // boy (cm)
 $age = 25; // yaş (sene)
 
+$calories = 0 ;
+
+if($sex == "male"){
+    $calories = (10*$weight)+(6.25*$height)-(5*$age)+5;
+}else if($sex == "female"){
+    $calories = (10*$weight)+(6.25*$height)-(5*$age)-161;
+}
+echo $calories;
+
 /**
  * Bu ödevde günlük kalori hesaplaması yapacağız.
  * Yukarıdaki değişkenleri ve aşağıdaki formülü kullanarak
